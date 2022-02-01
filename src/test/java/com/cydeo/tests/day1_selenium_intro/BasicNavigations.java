@@ -25,7 +25,6 @@ public class BasicNavigations {
         //Stop code execution for 3 seconds
         Thread.sleep(3000);
 
-
         // use selenium to navigate back
         driver.navigate().back();
 
@@ -47,12 +46,17 @@ public class BasicNavigations {
         // use navigate().to():
         driver.navigate().to("https://www.google.com");
 
+        //get the current title after getting the google page
         currentTitle = driver.getTitle();
 
 
         //System.out.println("driver.getTitle() = " + driver.getTitle());
 
         System.out.println("currentTitle = " + currentTitle);
+
+        // Get the current URL using Selenium
+        String currentURL =  driver.getCurrentUrl();
+
     }
 
 
