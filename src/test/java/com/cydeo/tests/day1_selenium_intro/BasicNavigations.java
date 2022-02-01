@@ -22,6 +22,9 @@ public class BasicNavigations {
         String currentTitle = driver.getTitle();
         System.out.println("currentTitle = " + currentTitle);
 
+        String currentURL =  driver.getCurrentUrl();
+        System.out.println("currentURL = " + currentURL);
+
         //Stop code execution for 3 seconds
         Thread.sleep(3000);
 
@@ -55,7 +58,10 @@ public class BasicNavigations {
         System.out.println("currentTitle = " + currentTitle);
 
         // Get the current URL using Selenium
-        String currentURL =  driver.getCurrentUrl();
+
+        System.out.println("currentURL = " + currentURL);
+
+
 
     }
 
