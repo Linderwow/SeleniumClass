@@ -58,6 +58,7 @@ public class BasicNavigations {
         System.out.println("currentTitle = " + currentTitle);
 
         // Get the current URL using Selenium
+        currentURL = driver.getCurrentUrl();
 
         System.out.println("currentURL = " + currentURL);
 
