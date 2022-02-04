@@ -31,7 +31,10 @@ public class T5_getText_getAttribute {
         }
 
         //4- Locate “First name” input box
-        WebElement firstNameInput = driver.findElement(By.name("firstname"));
+        // we are locating the web element using "name" locator
+        // name attribute has "firstname" value
+        //WebElement firstNameInput = driver.findElement(By.name("firstname"));
+        WebElement firstNameInput = driver.findElement(By.className("form-control"));
 
         //5- Verify placeholder attribute’s value is as expected:
         // Expected: first name
@@ -43,6 +46,8 @@ public class T5_getText_getAttribute {
         }else{
             System.out.println("Placeholder text verification FAILED!!!");
         }
+
+        driver.close();
 
     }
 
