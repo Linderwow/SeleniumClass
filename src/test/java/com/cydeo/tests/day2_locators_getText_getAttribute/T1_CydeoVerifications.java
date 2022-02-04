@@ -6,6 +6,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class T1_CydeoVerifications {
 
+    /*
+    IN THIS CLASS WE ARE SOLVING THE DAY2_TASK1
+
+     */
+
     public static void main(String[] args) {
 
         //TC #1: Cydeo practice tool verifications
