@@ -38,6 +38,12 @@ public class T5_getText_getAttribute {
         String expectedPlaceHolder = "first name";
         String actualPlaceHolder = firstNameInput.getAttribute("placeholder");
 
+        if (actualPlaceHolder.equals(expectedPlaceHolder)){
+            System.out.println("Placeholder text verification PASSED!");
+        }else{
+            System.out.println("Placeholder text verification FAILED!!!");
+        }
+
     }
 
 }
