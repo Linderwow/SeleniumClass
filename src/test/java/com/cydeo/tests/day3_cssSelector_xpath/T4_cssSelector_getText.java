@@ -34,8 +34,5 @@ public class T4_cssSelector_getText {
             System.out.println("Button text verification FAILED!");
 
         }
-
-
     }
-
 }
