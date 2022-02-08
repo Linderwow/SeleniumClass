@@ -23,7 +23,11 @@ public class T2_getText_getAttribute {
         String expectedRememberMeLabel= "Remember me on this computer";
         String actualRememberMeLabel = rememberMeLabel.getText();
 
-
+        if (actualRememberMeLabel.equals(expectedRememberMeLabel)){
+            System.out.println("Label verification PASSED!");
+        }else{
+            System.out.println("Label verification FAILED!!!");
+        }
 
         //4- Verify “forgot password” link text is as expected:
         //Expected: Forgot your password?
