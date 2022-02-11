@@ -21,11 +21,16 @@ public class T1_xpath_cssSelector_practice {
         //3. Locate all the WebElements on the page using XPATH and/or CSS
         //locator only (total of 6)
         //a. “Home” link
-        //Locate homeLink using cssSelector
+        //Locate homeLink using cssSelector, class value
         WebElement homeLink_ex1= driver.findElement(By.cssSelector("a[class='nav-link']"));
 
         //Locate homeLink using cssSelector syntax #2
         WebElement homeLink_ex2= driver.findElement(By.cssSelector("a.nav-link"));
+
+        //Locate homeLink using cssSelector, href value
+        WebElement homeLink_ex3= driver.findElement(By.cssSelector("a[href='/']"));
+
+
 
 
 
