@@ -22,6 +22,11 @@ public class T3_RadioButton_cont {
 
         //Locate name='sports' radio buttons and store them in a List of Web Element
 
+        clickAndVerifyRadioButton(driver, "sport", "hockey" );
+
+        clickAndVerifyRadioButton(driver, "sport", "football");
+
+        clickAndVerifyRadioButton(driver, "color", "yellow");
 
     }
 
