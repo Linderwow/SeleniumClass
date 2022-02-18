@@ -56,10 +56,30 @@ public class DropdownPractices {
         Select monthDropdown = new Select(driver.findElement(By.xpath("//select[@id='month']")));
         Select dayDropdown = new Select(driver.findElement(By.xpath("//select[@id='day']")));
 
-
         //Select year using : visible text
+        yearDropdown.selectByVisibleText("1923");
+
         //Select month using : value attribute
+        monthDropdown.selectByValue("11");
+
         //Select day using : index number
+        dayDropdown.selectByIndex(0);
+
+        //creating expected values
+        String expectedYear = "1923";
+        String expectedMonth = "December";
+        String expectedDay = "1";
+
+        //getting actual values from browser
+        String actualYear = yearDropdown.getFirstSelectedOption().getText();
+        String actualMonth = monthDropdown.getFirstSelectedOption().getText();
+        String actualDay = dayDropdown.getFirstSelectedOption().getText();
+
+        //create assertions
+        Assert.assertTrue(actualYear.equals(expectedYear));
+        Assert.assertEquals(actualMonth, expectedMonth);
+        Assert.assertEquals(actualDay, expectedDay);
+
     }
 
 }
