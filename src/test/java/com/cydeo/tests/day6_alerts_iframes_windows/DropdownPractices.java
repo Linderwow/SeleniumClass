@@ -4,6 +4,7 @@ import com.cydeo.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
@@ -31,8 +32,14 @@ public class DropdownPractices {
         stateDropdown.selectByValue("VA");
 
         //5. Select California
+        Thread.sleep(1000);
+        stateDropdown.selectByIndex(5);
+
         //6. Verify final selected option is California.
-        //Use all Select options. (visible text, value, index)
+        String expectedOptionText = "California";
+        String actualOptionText = stateDropdown.getFirstSelectedOption().getText();
+
+        Assert.assertEquals(actualOptionText, expectedOptionText);
     }
 
 }
