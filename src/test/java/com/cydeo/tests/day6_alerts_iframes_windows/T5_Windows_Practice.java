@@ -40,19 +40,30 @@ public class T5_Windows_Practice {
 
         Assert.assertEquals(actualTitle, expectedTitle);
 
-        System.out.println("Title before click:" + actualTitle);
+        System.out.println("Title before click: " + actualTitle);
 
         //5. Click to: “Click Here” link
         WebElement clickHereLink = driver.findElement(By.linkText("Click Here"));
 
         clickHereLink.click();
 
-        actualTitle = driver.getTitle();
 
-        System.out.println("Title after click: " + actualTitle);
 
         //6. Switch to new Window.
+        for(String each: driver.getWindowHandles()){
+
+            driver.switchTo().window(each);
+            System.out.println("Current title while switching windows: " + driver.getTitle());
+
+        }
+
         //7. Assert: Title is “New Window”
+        String expectedTitleAfterClick = "New Window";
+        actualTitle = driver.getTitle();
+
+        Assert.assertEquals(actualTitle, expectedTitleAfterClick);
+
+        System.out.println("Title after click: " + actualTitle);
 
     }
 }
