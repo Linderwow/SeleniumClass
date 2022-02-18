@@ -54,7 +54,5 @@ public class T4_IframePractice {
         //assertion of header text is displayed or not
         Assert.assertTrue(headerText.isDisplayed());
 
-
     }
-
 }
