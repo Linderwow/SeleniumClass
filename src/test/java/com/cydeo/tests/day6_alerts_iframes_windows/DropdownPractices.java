@@ -51,7 +51,15 @@ public class DropdownPractices {
 
     @Test
     public void dropdown_task6(){
+        //Select “December 1 , 1923” and verify it is selected.
+        Select yearDropdown = new Select(driver.findElement(By.xpath("")));
+        Select monthDropdown = new Select(driver.findElement(By.xpath("")));
+        Select dayDropdown = new Select(driver.findElement(By.xpath("")));
 
+
+        //Select year using : visible text
+        //Select month using : value attribute
+        //Select day using : index number
     }
 
 }
