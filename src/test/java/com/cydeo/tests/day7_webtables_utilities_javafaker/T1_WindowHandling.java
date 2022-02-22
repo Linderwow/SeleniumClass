@@ -55,3 +55,4 @@ public class T1_WindowHandling {
         Assert.assertTrue(actualTitle.contains(expectedInTitle));
     }
 }
+
