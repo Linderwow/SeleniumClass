@@ -21,6 +21,12 @@ public class Driver {
      */
     public static WebDriver getDriver(){
 
+        if (driver == null){
+
+        }
+
+        return driver;
+
     }
 
 }
