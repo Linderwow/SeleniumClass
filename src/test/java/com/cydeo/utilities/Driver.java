@@ -1,5 +1,7 @@
 package com.cydeo.utilities;
 
+import org.openqa.selenium.WebDriver;
+
 public class Driver {
 
     /*
@@ -7,5 +9,11 @@ public class Driver {
     access to the object of this class from outside the class
      */
     private Driver(){}
+
+    /*
+    We make WebDriver private, because we want to close access from outside the class.
+    We make it static because we will use it in a static method.
+     */
+    private static WebDriver driver;
 
 }
