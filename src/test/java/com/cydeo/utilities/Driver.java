@@ -16,4 +16,11 @@ public class Driver {
      */
     private static WebDriver driver;
 
+    /*
+    Create a re-usable utility method which will return same driver instance when we call it
+     */
+    public static WebDriver getDriver(){
+
+    }
+
 }
