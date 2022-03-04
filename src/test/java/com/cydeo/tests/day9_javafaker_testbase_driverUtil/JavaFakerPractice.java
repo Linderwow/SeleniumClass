@@ -9,6 +9,7 @@ public class JavaFakerPractice {
     public void test1(){
         //Creating Faker object to reach methods
         Faker faker = new Faker();
+        //Faker faker = new Faker(new Locale("fr"));
 
         System.out.println("faker.name().firstName() = " + faker.name().firstName());
         System.out.println("faker.name().lastName() = " + faker.name().lastName());
@@ -35,6 +36,7 @@ public class JavaFakerPractice {
         System.out.println("faker.chuckNorris().fact() = "
                 + faker.chuckNorris().fact().replaceAll("Chuck Norris", "Muhtar"));
 
-    }
 
+
+    }
 }
