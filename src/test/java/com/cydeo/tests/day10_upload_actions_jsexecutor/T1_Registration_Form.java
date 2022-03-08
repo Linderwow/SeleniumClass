@@ -1,5 +1,6 @@
 package com.cydeo.tests.day10_upload_actions_jsexecutor;
 
+import com.cydeo.utilities.Driver;
 import org.testng.annotations.Test;
 
 public class T1_Registration_Form {
@@ -8,6 +9,9 @@ public class T1_Registration_Form {
     public void registration_form_test(){
         //1. Open browser
         //2. Go to website:https://practice.cydeo.com/registration_form
+        //Driver.getDriver() --> driver.get(url)
+        Driver.getDriver().get();
+
         //3. Enter first name
         //4. Enter last name
         //5. Enter username
