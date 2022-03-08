@@ -35,7 +35,6 @@ public class T3_Actions_Hover {
         //a. “name: user1” is displayed
         Assert.assertTrue(user1.isDisplayed());
 
-
         //4. Hover over to second image
         BrowserUtils.sleep(2);
         actions.moveToElement(img2).perform();
@@ -52,7 +51,7 @@ public class T3_Actions_Hover {
         //a. “name: user3” is displayed
         Assert.assertTrue(user3.isDisplayed());
 
-
+        //BREAK UNTIL 3.13PM CST
     }
 
 }
