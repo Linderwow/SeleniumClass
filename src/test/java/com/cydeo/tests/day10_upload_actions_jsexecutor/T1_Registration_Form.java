@@ -20,11 +20,16 @@ public class T1_Registration_Form {
         Faker faker = new Faker();
 
         //3. Enter first name
+        //WebElement inputFirstName = driver.findElement(By.xpath("//input[@name='firstname']"));
         WebElement inputFirstName = Driver.getDriver().findElement(By.xpath("//input[@name='firstname']"));
         inputFirstName.sendKeys(faker.name().firstName());
 
         //4. Enter last name
+        WebElement inputLastName = Driver.getDriver().findElement(By.xpath("//input[@name='lastname']"));
+        inputLastName.sendKeys(faker.name().lastName());
+
         //5. Enter username
+
         //6. Enter email address
         //7. Enter password
         //8. Enter phone number
