@@ -23,6 +23,9 @@ public class T2_Upload_Practice {
         BrowserUtils.sleep(2);
         fileUpload.sendKeys(path);
 
+        WebElement uploadButton = Driver.getDriver().findElement(By.id("file-submit"));
+        uploadButton.click();
+
         //4. Assert:
         //-File uploaded text is displayed on the page
     }
