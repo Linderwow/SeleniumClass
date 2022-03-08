@@ -4,6 +4,7 @@ import com.cydeo.utilities.BrowserUtils;
 import com.cydeo.utilities.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class T2_Upload_Practice {
@@ -26,12 +27,9 @@ public class T2_Upload_Practice {
         WebElement uploadButton = Driver.getDriver().findElement(By.id("file-submit"));
         uploadButton.click();
 
-        WebElement fileUploadedHeader = Driver.getDriver().findElement(By.tagName("h3"));
-
-
-
         //4. Assert:
         //-File uploaded text is displayed on the page
+        WebElement fileUploadedHeader = Driver.getDriver().findElement(By.tagName("h3"));
+        Assert.assertTrue(fileUploadedHeader.isDisplayed());
     }
-
 }
