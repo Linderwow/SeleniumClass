@@ -43,8 +43,12 @@ public class T1_Registration_Form {
         //7. Enter password
         WebElement inputPassword = Driver.getDriver().findElement(By.xpath("//input[@name='password']"));
         inputPassword.sendKeys(faker.numerify("########"));
+        //System.out.println("faker.internet().password() = " + faker.internet().password());
 
         //8. Enter phone number
+        WebElement inputPhone = Driver.getDriver().findElement(By.xpath("//input[@name='phone']"));
+        inputPhone.sendKeys(faker.numerify("###-###-####"));
+
         //9. Select a gender from radio buttons
         //10.Enter date of birth
         //11.Select Department/Office
