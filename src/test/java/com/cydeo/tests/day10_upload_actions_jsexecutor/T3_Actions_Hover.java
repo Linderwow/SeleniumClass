@@ -17,6 +17,9 @@ public class T3_Actions_Hover {
         WebElement img2 = Driver.getDriver().findElement(By.xpath("(//img)[2]"));
         WebElement img3 = Driver.getDriver().findElement(By.xpath("(//img)[3]"));
 
+        //Locate all the "user" texts under here:
+        WebElement user1= Driver.getDriver().findElement(By.xpath("//h5[text()='name: user1']"));
+
         //2. Hover over to first image
         //3. Assert:
         //a. “name: user1” is displayed
