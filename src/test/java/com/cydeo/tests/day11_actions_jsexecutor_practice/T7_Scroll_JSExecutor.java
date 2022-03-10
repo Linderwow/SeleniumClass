@@ -22,8 +22,8 @@ public class T7_Scroll_JSExecutor {
         //3- Scroll down to “Cydeo” link
         js.executeScript("arguments[0].scrollIntoView(true)", cydeoLink);
 
-
         //4- Scroll up to “Home” link
+
         //5- Use below provided JS method only
         //JavaScript method to use : arguments[0].scrollIntoView(true)
 
