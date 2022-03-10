@@ -17,6 +17,9 @@ public class T1_Circle_Drag_N_Drop {
         acceptCookiesButton.click();
 
         //2. Drag and drop the small circle to bigger circle.
+        WebElement smallCircle = Driver.getDriver().findElement(By.id("draggable"));
+        WebElement bigCircle = Driver.getDriver().findElement(By.id("droptarget"));
+
         //3. Assert:
         //-Text in big circle changed to: “You did great!”
     }
